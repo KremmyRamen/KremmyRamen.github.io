@@ -50,6 +50,7 @@ nav{
 ol{
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
 }
 
 /*Activty 2 css */
