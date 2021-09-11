@@ -47,6 +47,10 @@ figcaption{
 nav{
   text-align: center;
 }
+ol{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Activty 2 css */
 
