@@ -49,7 +49,7 @@ nav{
 }
 
 ol{
-    display: inline-block;
+    display: table;
     margin-left: auto;
     margin-right: auto;
 }
