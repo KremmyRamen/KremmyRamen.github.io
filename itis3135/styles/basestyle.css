@@ -67,7 +67,7 @@ margin-right: auto
 
 
 thead {
-  background-color: white;
+  background-color: darkmagenta;
 }
 
 th, td {
@@ -79,7 +79,7 @@ th, td {
 }
 
 .thead{
-  background-color: darkblue;
+  background-color: pink;
 }
 
 .right {
@@ -87,10 +87,10 @@ th, td {
 }
 
 tbody tr:nth-child(odd) td {
-  background-color: lightblue;
+  background-color: purple;
 }
 
 tbody tr:nth-child(even) td {
-  background-color: blue;
+  background-color: orchid;
 }
 
