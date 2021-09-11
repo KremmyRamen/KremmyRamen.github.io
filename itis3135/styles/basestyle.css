@@ -52,6 +52,7 @@ ol{
     display: table;
     margin-left: auto;
     margin-right: auto;
+    list-style-position: inside;
 }
 
 /*Activty 2 css */
