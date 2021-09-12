@@ -97,3 +97,21 @@ tbody tr:nth-child(even) td {
 tbody tr:nth-child(1) td[rowspan=1]{
     background-color: #BF40BF;
 }
+/*Activty 3 css */
+
+input[type=submit]{
+  background-color: darkslateblue;
+  color: lightgray;
+}
+
+input[type=text], input[type=tel], input[type=email], input[placeholder]{
+  background-color: lightgray;
+  color: darkslateblue;
+  font-family: 'Helvetica';
+  margin: 8px 0;
+} 
+
+select{
+  background-color: lightgray;
+  color: darkslateblue;
+}
