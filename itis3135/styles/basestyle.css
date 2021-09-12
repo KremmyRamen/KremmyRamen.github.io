@@ -94,6 +94,6 @@ tbody tr:nth-child(even) td {
   background-color: orchid;
 }
 
-tbody tr:nth-child(2) td[rowspan=1]{
+tbody tr:nth-child(1) td[rowspan=1]{
     background-color: #BF40BF;
 }
