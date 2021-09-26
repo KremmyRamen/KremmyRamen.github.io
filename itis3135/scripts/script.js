@@ -24,11 +24,11 @@ function userInformation(){
 
 function joke(){
     let jokeText;
-    let userJoke = prompt("Give us a joke!");
+    let userJoke = prompt("Give us a joke related to Newts!");
     if (userJoke == null || userJoke == ""){
         jokeText = "User cancelled the prompt to tell a joke";
     } else {
-        jokeText = "Joke of the day! -> " + userJoke;
+        jokeText = "Newt joke of the day! -> " + userJoke;
     }
     document.getElementById("joke").innerHTML = jokeText;
 }
@@ -56,7 +56,7 @@ function math(){
     let text;
     var equal = 0;
     var num = prompt("Would you like to: Add, Subtract, Multiply, or Divide? (Enter 1,2,3,4 respectively)")
-    if (num = 1){
+    if (num == 1){
         var x = prompt("Give us a number between -1000 and 1000: ");
         var y = prompt("Give us a second number between -1000 and 1000");
         if(x == null || x == ""){
@@ -68,9 +68,10 @@ function math(){
             y = parseInt(y);
             equal = x + y;
             text = "Adding " + x + " by " + y + " equals " + equal;
-        }
+        
         document.getElementById("addition").innerHTML = text;
-    } else if( num = 2){
+    }
+    } else if( num == 2){
         var x = prompt("Give us a number between -1000 and 1000: ");
         var y = prompt("Give us a second number between -1000 and 1000");
         if(x == null || x == ""){
@@ -82,23 +83,25 @@ function math(){
             y = parseInt(y);
             equal = x - y;
             text = "Subtracting " + x + " by " + y + " equals " + equal;
-        }
+        
         document.getElementById("subtraction").innerHTML = text;
-    }else if( num = 3){
+    }
+    }else if( num == 3){
         var x = prompt("Give us a number between -1000 and 1000: ");
         var y = prompt("Give us a second number between -1000 and 1000");
         if(x == null || x == ""){
             text = "User cancelled the prompt to give the first number";
         } else if (y == null || y == ""){
-            text = "User cancelled the prompt to give the second number";
+            text = "User cancelled the prompt to give the second number or tried to divide by 0";
         } else {
             x = parseInt(x);
             y = parseInt(y);
             equal = x * y;
             text = "Multipliying " + x + " by " + y + " equals " + equal;
-        }
+        
         document.getElementById("multiplication").innerHTML = text;
-    }else if( num = 4){
+    }
+    }else if( num == 4){
         var x = prompt("Give us a number between -1000 and 1000: ");
         var y = prompt("Give us a second number between -1000 and 1000");
         if(x == null || x == ""){
@@ -110,32 +113,32 @@ function math(){
             y = parseInt(y);
             equal = x / y;
             text = "Dividing " + x + " by " + y + " equals " + equal;
-        }
+        
         document.getElementById("division").innerHTML = text;
+        }
     }
-    
+}
 
 
 function noise(){
     let text;
-    let noise = prompt("Give us random onomatopeia!");
+    let noise = prompt("What's a sound a Newt might make?");
     if(noise == null || noise == ""){
         text = "User cancelled the prompt to give a random noise";
     } else {
-        text = "Did you know that tree frogs make the noise " + noise + "!? Isn't that silly?";
+        text = "Did you know that Newts make the noise " + noise + "!? Isn't that silly?";
     }
     document.getElementById("noise").innerHTML = text;
 }
 
-function favoriteAvenger(){
+function random(){
     let text; 
-    alert("Iron Man\nCaptain America\nHulk\nThor\nBlack Widow\nHawkeye\nLoki")
-    let avenger = prompt("Between the Avengers Listed, who is your favorite?");
-    if(avenger == null || avenger == ""){
-        text = "User cancelled the prompt to give their favorite avenger";
+    alert("Northern Crested Newt\nEastern Newt\nSmooth Newt\nAlpine Newt\nRed Bellied Newt\nCalifornia Newt")
+    let random = prompt("Between the Newts Listed, who is your favorite?");
+    if(random == null || random == ""){
+        text = "User cancelled the prompt";
     } else {
-        text = "Employee of the Month: " + avenger;
+        text = "Newt of the Month: " + random;
     }
-    document.getElementById("avenger").innerHTML = text;
-}
+    document.getElementById("random").innerHTML = text;
 }
