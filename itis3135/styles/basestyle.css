@@ -122,3 +122,7 @@ select{
 form{
   text-align: center;
 }
+
+.text-center {
+  text-align: center;
+}
