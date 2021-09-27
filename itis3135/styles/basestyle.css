@@ -1,4 +1,5 @@
 
+
 .small-image {
     width: 300px;
     height: 300px;
@@ -94,7 +95,7 @@ tbody tr:nth-child(even) td {
   background-color: orchid;
 }
 
-tbody tr:nth-child(1) td[rowspan=1]{
+tbody tr:nth-child(1) td[rowspan="1"]{
     background-color: #BF40BF;
 }
 /*Activty 3 css */
