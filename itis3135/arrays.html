@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="Calculator" >
+        <link href="styles/basestyle.css" rel="stylesheet" type="text/css" >
+        <script src="scripts/arrays.js"></script> 
+        <title>Raymond Nguyen-ITIS 3135 Arrays 10/9/21</title>   
+    </head>
+    <body>
+        <header>
+            <h1>Raymond Nguyen-ITIS 3135 : Arrays</h1>
+        </header>
+        <nav>
+            <a href="introduction.html">Introduction</a>
+            || 
+            <a href="tables.html">HTML Tables</a>
+            || 
+            <a href="forms.html">HTML Forms</a>
+            ||
+            <a href="website_evaluations.html">Website Evaluations</a>
+            ||
+            <a href="interactions.html">Scripts</a>
+            ||
+            <a href="polygons.html">Polygons</a>
+            ||
+            <a href="calculator.html">Calculator</a>
+            ||
+            <a href="arrays.html">Arrays</a>
+            
+        </nav>
+        <main>
+            <h2>Actions</h2>
+            <form id="dropdown">
+                    <label for="employee_name">Select an Employee:</label>
+                        <select id="employee_name" name="employee_name">
+                            <option value="john_smith">John Smith</option>
+                            <option value="jim_brown">Jim Brown</option>
+                            <option value="stephanie_williams">Stephanie Williams</option>
+                        </select>
+                    <br>
+                </form>
+            <div class="center">
+                <button id="add-salary" onclick=addSalary()>Add Salary</button>
+                <button id="display-results" onclick=displayResults()>Display Results</button>
+                <button id="display-salary" onclick=displaySalary()>Display Salary</button>
+            </div>
+            <br>
+            <p>Average Salary: <span id="avg">{$$$}</span> - Highest Salary: <span id="high">{$$$}</span></p>
+            <table id="data">
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </table><br>
+        </main>
+    </body>
+        <footer>
+            <nav>
+                <br />            
+                <a href="https://kremmyramen.github.io/itis3135/">First Course Page</a> 
+                ||
+                <a href="https://webpages.uncc.edu/rnguye14/">Personal Website</a>
+                ||
+                <a href="https://www.freecodecamp.org/fcc4877f966-b247-4578-8a1a-ccdf562874c9">Freecodecamp</a>
+                ||
+                <a href="https://github.com/KremmyRamen">Github</a>
+                ||        
+                <a href="https://github.com/KremmyRamen/KremmyRamen.github.io">Github Repository</a>        
+                ||        
+                <a href="index.html">Root Website</a>
+    
+        </nav>
+            <br />
+            <p>Page built by RXN Enterprises&trade;</p>            
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Frnguye14%2Fitis3135%2Farrays.html">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Frnguye14%2Fitis3135%2Farrays.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+</html>
