@@ -34,7 +34,7 @@ th {
 
   padding: 8px;
   background-color:#262626;
-  color:powderblue;
+  color:lightgreen;
   text-align: left;
   
 }
@@ -45,7 +45,7 @@ th {
   text-align: left;
   background-color:#262626;
   
-  color:lightyellow;
+  color:yellow;
 }
 
 table.center {
@@ -58,7 +58,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  color:lavender;
+  color:white;
 }
 
 /* button */
@@ -69,7 +69,7 @@ button {
 
 /* links */
 a {
-  color:powderblue;
+  color:lightblue;
 }
 
 a:hover {
@@ -79,6 +79,7 @@ a:hover {
 
 /* footer bottom of page*/
 footer {
+  text-align: center;
   position: absolute;
   bottom: 0;
   right: 0;
