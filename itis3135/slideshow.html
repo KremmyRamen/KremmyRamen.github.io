@@ -3,7 +3,11 @@
     <head>
         <meta name="keywords" content="Calculator" >
         <link href="styles/basestyle.css" rel="stylesheet" type="text/css" >
-        <script src="scripts/arrays.js"></script> 
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
         <title>Raymond Nguyen-ITIS 3135 Slide Show 10/23/21</title>   
     </head>
     <body>
@@ -33,29 +37,45 @@
         </nav>
         
         <main>
-            <h2>Actions</h2>
-            <form id="dropdown">
-                    <label for="employee_name">Select an Employee:</label>
-                        <select id="employee_name" name="employee_name">
-                            <option value="john_smith">John Smith</option>
-                            <option value="jim_brown">Jim Brown</option>
-                            <option value="stephanie_williams">Stephanie Williams</option>
-                        </select>
-                    <br>
-                </form>
-            <div class="center">
-                <button id="add-salary" onclick=addSalary()>Add Salary</button>
-                <button id="display-results" onclick=displayResults()>Display Results</button>
-                <button id="display-salary" onclick=displaySalary()>Display Salary</button>
-            </div>
+            <script>
+                $(document).ready(function() {
+                    var imgs = new Array();
+                    var intervalID;
+    
+                    $('#slideshow img').each(function() {
+                        imgs.push($(this).attr('src'));
+                    });
+    
+                    function setImage() 
+                    {
+                        var active = $('#active');
+                        var currentImageURL = active.attr('src');
+                        var activeImage = $.inArray(currentImageURL, imgs);
+                        if(activeImage == (imgs.length - 1)){
+                            activeImage = -1;
+                        }
+    
+                        active.attr('src', imgs[activeImage + 1]);
+                    }
+    
+                    $(function(){
+                        intervalID = setInterval(setImage, 1500);
+                    });
+                });
+            </script>
+            
+            <h2>Logo Slideshow</h2>
+            <h3>RXN Enterprises Logos </h3>
+            <img id="active" src="images/newt_1.jpg" alt="Newt 1">
             <br>
-            <p>Average Salary: <span id="avg">{$$$}</span> - Highest Salary: <span id="high">{$$$}</span></p>
-            <table id="data">
-                <tr>
-                    <th>Name</th>
-                    <th>Salary</th>
-                </tr>
-            </table><br>
+            <div id="slideshow">
+                <img class="smaller-image" src="images/newt_1.jpg" alt="Newt 1">
+                <img class="smaller-image" src="images/newt_2.jpg" alt="Newt 2">
+                <img class="smaller-image" src="images/newt_3.jpg" alt="Newt 3">
+                <img class="smaller-image" src="images/newt_4.jpg" alt="Newt 4">
+                <img class="smaller-image" src="images/newt_5.jpg" alt="Newt 5">
+                <img class="smaller-image" src="images/newt_6.jpg" alt="Newt 6">
+            </div>
         </main>
     </body>
         <footer>
