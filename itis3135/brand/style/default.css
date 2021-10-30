@@ -1,0 +1,142 @@
+
+
+.small-image {
+    width: 300px;
+    height: 300px;
+  }
+  .smaller-image {
+    width: 200px;
+    height: 200px;
+  }
+  .background {
+      background-color: lightpink;
+    }
+  
+    body{
+  font-family: 'Oswald';
+  color: #5D5DD5;
+  background-color: #93CAED;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+header, footer{
+  text-align: center;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Oswald';
+  text-align: center;
+  line-height: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: #792DC5;
+  font-weight: bold;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #AA87CD;
+}
+
+figure{
+  text-align: center;
+}
+
+figcaption{
+  font-style: italic;
+}
+
+nav{
+  text-align: center;
+}
+
+ol{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: inside;
+}
+
+/*Activty 2 css */
+
+table {
+  border-collapse: collapse;
+  margin: 20px;
+border: 1px solid black;
+margin-left: auto;
+margin-right: auto
+}
+
+
+thead {
+  background-color: darkmagenta;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: .2em 1em .2em .5em;
+  text-align: left;
+  vertical-align: middle;
+  color: black;
+}
+
+.thead{
+  background-color: darkmagenta;
+}
+
+.right {
+  text-align: right;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #BF40BF;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: orchid;
+}
+
+tbody tr:nth-child(1) td[rowspan="1"]{
+    background-color: #BF40BF;
+}
+/*Activty 3 css */
+
+input[type=submit]{
+  background-color: darkslateblue;
+  color: lightgray;
+
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=radio], input[placeholder]{
+  background-color: lightgray;
+  color: darkslateblue;
+  font-family: 'Arial';
+  margin: 8px 0;
+  text-align: center;
+} 
+
+select{
+  background-color: lightgray;
+  color: darkslateblue;
+
+}
+
+form{
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.button{
+  text-align:center;
+}
+
+.imagebrand{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
