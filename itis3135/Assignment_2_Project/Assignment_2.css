@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 20px;
+	width: 550px;
+}
+	
+h1, h2, ul, p {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	padding-bottom: .25em;
+}
+h2 {
+	font-size: 120%;
+	padding: .5em 0 .25em;
+}
+li {
+	padding-right: 10px;
+	display: inline;
+
+	/* Below is actual css */
+}
+table{
+	width: 100%; 
+	border-collapse: 
+	collapse; border-style: hidden; height: 69px; 
+	border: 0;
+} 
+
+tr, td{
+width: 50%;
+text-align: center;
+}
+
+img{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.t1{
+	font-family: 'Helvetica';
+	font-size: 200%;
+}
+
+.background {
+	background-color: lightpink;
+  }
+
+  .smaller-image {
+    width: 0px;
+    height: 0px;
+	visibility: hidden;
+  }
+
+  .mySlides {
+	width: 100%; 
+	height:290px;
+	max-height:100%;
+	object-fit: contain;
+  }
+
+  .thirds{
+	width: 33.33%;
+  }
+
+.buttoncolor{
+	background-color: pink;
+}
+
+.bigtext1{
+	font-size: 300%;
+	text-align: center;
+}
+.bigtext2{
+	font-size: 300%;
+	text-align: left;
+}
