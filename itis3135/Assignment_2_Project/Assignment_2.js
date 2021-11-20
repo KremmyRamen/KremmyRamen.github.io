@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 	var imgList = [
 		"images/logo2.png",
-		"images/digital_2.jpg",
-		"images/digital_3.jpg"
+		"images/digital_2.png",
+		"images/digital_3.png"
 	]
 
 	$("#slides").backgroundSlideshow({
