@@ -12,8 +12,4 @@ $(document).ready(function() {
 		images: imgList,
 		delay: 3000
 	})
-
-
-
-
 });
