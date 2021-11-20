@@ -3,9 +3,9 @@ $(document).ready(function() {
 	var intervalID;
 
 	var imgList = [
-		"images/1.jpg",
-		"images/2.jpg",
-		"images/3.jpg"
+		"images/digital_1.jpg",
+		"images/digital_2.jpg",
+		"images/digital_3.jpg"
 	]
 
 	$("#slides").backgroundSlideshow({
