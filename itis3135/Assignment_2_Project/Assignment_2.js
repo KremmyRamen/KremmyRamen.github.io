@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var intervalID;
 
 	var imgList = [
-		"images/digital_1.jpg",
+		"images/logo2.png",
 		"images/digital_2.jpg",
 		"images/digital_3.jpg"
 	]
