@@ -5,78 +5,38 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="Assignment_2.css" rel="stylesheet" type="text/css" >
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="performant-background-slideshow/src/jquery-background-slideshow.js"></script>
+    <script src="Assignment_2.js"></script>
 	<title>Raymond Nguyen-ITIS 3135 Home Page 11/7/21</title>
 </head>
-<body class="background">
+<body>
 
-	<header>
+	<header class="hidden">
 
 			<h1>Rachael Nguyen Art</h1>
 
 	</header>
-    <nav>
-		<a href="index.html">Home</a>
-		|| 
-		<a href="about_me.html">About Me</a>
-		|| 
-		<a href="eportfolio.html">E-Portfolio</a>
-		||
-		<a href="contact_me.html">Contact Me</a>
-		||
-		<a href="commissions.html">Commissions</a>
-		||
-		<a href="donations.html">Donations</a>
-        ||
-		<a href="to_do_list.html">To Do List</a>
-    </nav>
-    
 	
 	<main>
-
-		<table>
-			<tbody>
-			<tr>
-			<td style = "width: 23.3333%;"><img src="images/logo2.png" alt="Logo" width="141" height="141"></td>
-			<td style = "width: 63.3333%;" class = "t1"; >Rachael Nguyen Hobby Artist</td>
-			<td style = "width: 13.3333%;">&nbsp;</td>
-			</tr>
-			</tbody>
-			</table>
-
-
-
-		<p>
-			These will be links to other parts of the website, likely to remove the top navigation bar
-		</p>
-		<table>
-			<tbody>
-			<tr>
-			<td>About Me</td>
-			<td>The Portfolio</td>
-			</tr>
-			<td style rowspan="3"><img src="images/logo2.png" alt="" width="175" height="175" /></td>
-			<td><img src="images/portfolio_icon.png" alt="" width="175" height="175" /></td>
-			<tr>
-			<td>Commissions</td>
-			<td>&nbsp;</td>
-			</tr>
-			<tr>
-			<td><img src="images/shop_icon.png" alt="" width="175" height="175" /></td>
-			<td>&nbsp;</td>
-			</tr>
-			</tbody>
-			</table>
-
-
-	
+		<div id="slides"></div>
+		<div id="body_format">
+			<img src="images/logo2.png" alt="Logo" id="logo">
+			<h1>Rachael Nguyen Hobby Artist</h1>
+			<div class="banner">
+				<ul>
+					<li><a href="">About me</a></li>
+					<li><a href="">The portfolio</a></li>
+					<li><a href="">Commissions</a></li>
+					<li><a href="">a</a></li>
+					<li><a href="">b</a></li>
+				</ul>
+			</div>
+		</div>
 	</main>
 	
 	<footer>
-		<br/>
-
-		<br />
-
-	
 	</footer>
 
 </body>
