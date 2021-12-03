@@ -4,14 +4,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link href="Assignment_2.css" rel="stylesheet" type="text/css" >
+	<link href="Assignment_2.css" rel="stylesheet" type="text/css">
 	<title>Raymond Nguyen-ITIS 3135 e-portfolio Page 11/7/21</title>
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.js"
-	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-	crossorigin="anonymous">
-</script>
-<script src = "Assignment_2.js"> </script>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 </head>
 <body class="background">
 
@@ -45,19 +45,28 @@
 
 		<table>
 			<tbody>
-				<tr class = "thirds">
-			<td rowspan = "3"><img class ="mySlides" id="active" src="images/digital_1.JPG" alt="Photo 1">
-				<br>
-				<div id="slideshow">
-					<img class="smaller-image" src="images/digital_1.JPG" alt="Photo 1">
-					<img class="smaller-image" src="images/digital_2.JPG" alt="Photo 2">
-					<img class="smaller-image" src="images/digital_3.JPG" alt="Photo 3">
-					<img class="smaller-image" src="images/digital_4.JPG" alt="Photo 4">
-					<img class="smaller-image" src="images/digital_5.JPG" alt="Photo 5">
-					<img class="smaller-image" src="images/digital_6.JPG" alt="Photo 6">
-				</div>
-			<td>misc. digital</td>
-			</tr>
+				<tr class="thirds"> misc. digital </tr>
+				<tr>
+					<td style="margin-left: auto; margin-right: auto;" >
+						<div ID ="misc. digital" data-nanogallery2='{
+
+							"thumbnailWidth": "200",
+							"thumbnailLabel": {
+									"position": "overImageOnBottom"
+							},
+						"thumbnailAlignment": "center",
+						"thumbnailOpenImage": true
+						}'>
+							<a href="images/digital_1.JPG" data-ngthumb="images/digital_1.JPG" data-ngdesc=""></a>
+							<a href="images/digital_2.JPG" data-ngthumb="images/digital_2.JPG" data-ngdesc=""></a>
+							<a href="images/digital_3.JPG" data-ngthumb="images/digital_3.JPG" data-ngdesc=""></a>
+							<a href="images/digital_4.JPG" data-ngthumb="images/digital_4.JPG" data-ngdesc=""></a>
+							<a href="images/digital_5.JPG" data-ngthumb="images/digital_5.JPG" data-ngdesc=""></a>
+							<a href="images/digital_6.JPG" data-ngthumb="images/digital_6.JPG" data-ngdesc=""></a>
+						</div>
+					</td>
+				</tr>
+
 			<tr class = "thirds"><td>these artworks are primarily from spontaneous ideas and inspirations. i experiment with many styles, but i mainly focus on character design and appealing color schemes for each.</td></tr>
 			<tr class = "thirds"><td><button class = "buttoncolor" type="button" onclick = "window.location.href='about_me.html';">Learn more about me!</button></td></tr>
 		</tbody>
@@ -73,19 +82,27 @@
 		
 		<table>
 			<tbody>
-				<tr class = "thirds">
-				<td>misc. traditional</td>
-			<td rowspan = "3"><img class ="mySlides" id="active" src="images/traditional_1.JPG" alt="Photo 1">
-				<br>
-				<div id="slideshow">
-					<img class="smaller-image" src="images/traditional_1.JPG" alt="Photo 1">
-					<img class="smaller-image" src="images/traditional_2.JPG" alt="Photo 2">
-					<img class="smaller-image" src="images/traditional_3.JPG" alt="Photo 3">
-					<img class="smaller-image" src="images/traditional_4.JPG" alt="Photo 4">
-					<img class="smaller-image" src="images/traditional_5.JPG" alt="Photo 5">
-					<img class="smaller-image" src="images/traditional_6.JPG" alt="Photo 6">
-				</div>
-			</tr>
+				<tr class="thirds"> misc. traditional </tr>
+				<tr>
+					<td>
+						<br>
+						<div ID="misc. traditional" data-nanogallery2='{
+
+							"thumbnailWidth": "200",
+							"thumbnailLabel": {
+									"position": "overImageOnBottom"
+							},
+						"thumbnailAlignment": "center",
+						"thumbnailOpenImage": true
+						}'>
+							<a href="images/traditional_1.JPG" data-ngthumb="images/traditional_1.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_2.JPG" data-ngthumb="images/traditional_2.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_3.JPG" data-ngthumb="images/traditional_3.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_4.JPG" data-ngthumb="images/traditional_4.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_5.JPG" data-ngthumb="images/traditional_5.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_6.JPG" data-ngthumb="images/traditional_6.JPG" data-ngdesc=""></a>
+						</div>
+				</tr>
 			<tr class = "thirds"><td>these are my more stress-relieving works, as well as works for my art classes. i like to use various mediums, but my go to is pencil and paper.</td></tr>
 			<tr class = "thirds"><td><button class = "buttoncolor" type="button" onclick = "window.location.href='contact_me.html';">Like what you see? Contact me!</button></td></tr>
 		</tbody>
