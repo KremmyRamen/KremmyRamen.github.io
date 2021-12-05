@@ -65,8 +65,18 @@ body {
 	/*position: relative;
 	left: 30px;
 	*/
-
 }
+
+.down{
+	position: relative;
+	top: 50px;
+}
+
+.down2{
+	position: relative;
+	top: 200px;
+}
+
 .banner > ul > li {
 	display: inline-block;
 }
@@ -183,3 +193,5 @@ img{
 	font-size: 300%;
 	text-align: left;
 }
+
+
