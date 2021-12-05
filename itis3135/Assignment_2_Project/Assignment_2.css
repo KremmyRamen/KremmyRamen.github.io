@@ -18,6 +18,16 @@ body {
 	display: inline-block;
 }
 
+.num {
+    font-size: 300%;
+    text-align: center;
+}
+
+.medtext {
+    font-size: 150%;
+    text-align: center;
+}
+
 #slides {
 	display: inline-block;
 	position: fixed;

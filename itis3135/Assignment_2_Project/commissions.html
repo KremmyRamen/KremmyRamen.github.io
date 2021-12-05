@@ -1,107 +1,66 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="/path/to/css/style.css" />
-	<script src="/path/to/cdn/jquery.min.js"></script>
-	<script src="/path/to/js/app.js"></script>
+	<link rel="stylesheet" href="/path/to/compiled/flipclock.css" />
 	<meta charset="UTF-8">
-	<link href="Assignment_2.css" rel="stylesheet" type="text/css" >
-	<link href="countdown.css" rel="stylesheet" type="text/css" >
-	<script src="app.js"></script>
+	<link href="Assignment_2.css" rel="stylesheet" type="text/css">
 	<title>Raymond Nguyen-ITIS 3135 Commissions Page 11/7/21</title>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+			crossorigin="anonymous">
+	</script>
+	<script src="js/jquery.numscroll.js"></script>
+	<script>
+		$(function () {
+			$(".num").numScroll({
+				number: 53,
+				time: 1500,
+				delay: 0
+			});
+		});
+	</script>
 </head>
 <body class="background">
-	<div class = "banner2"> 
-	<div class="banner">
-		<a href="index.html">
-			<img class = "icon_banner" src="images/logo2.png" alt="Logo" width="141" height="141">
-		</a>
-		<ul>
-			<li><a href="about_me.html"> <img class = "img_button2" src="images/about_me_icon.png" alt="about me icon" style="width:50px;height:50px;"></a></li>
-			<li><a href="eportfolio.html"><img class = "img_button2" src="images/portfolio_icon.png" alt="portfolio icon" style="width:50px;height:50px;"></a></li>
-			<li><a href="commissions.html"><img class = "img_button2" src="images/shop_icon.png" alt="commissions icon" style="width:100px;height:100px;"></a></li>
-			<li><a href="contact_me.html"> <img class = "img_button2" src="images/contact_me_icon.png" alt="contact me icon" style="width:50px;height:50px;"></a></li>
-			<li><a href="donations.html"> <img class = "img_button2" src="images/donation_icon.png" alt="donations icon" style="width:50px;height:50px;"></a></li>
-		</ul>
+	<div class="banner2">
+		<div class="banner">
+			<a href="index.html">
+				<img class="icon_banner" src="images/logo2.png" alt="Logo" width="141" height="141">
+			</a>
+			<ul>
+				<li><a href="about_me.html"> <img class="img_button2" src="images/about_me_icon.png" alt="about me icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="eportfolio.html"><img class="img_button2" src="images/portfolio_icon.png" alt="portfolio icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="commissions.html"><img class="img_button2" src="images/shop_icon.png" alt="commissions icon" style="width:100px;height:100px;"></a></li>
+				<li><a href="contact_me.html"> <img class="img_button2" src="images/contact_me_icon.png" alt="contact me icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="donations.html"> <img class="img_button2" src="images/donation_icon.png" alt="donations icon" style="width:50px;height:50px;"></a></li>
+			</ul>
+		</div>
 	</div>
-	</div>
-    
-	
-	<main>
-		<div class="container" class = "hidden">
-			<div class="options">
-			  <div class="limit">
-				<button class="limit-button">Countdown with limit date</button>
-				<p> <small>
-				  Countdown with limit date allows you to select the target date, and it will stop when the countdown reaches zero.
-				</small></p>
-			  </div>
-			  <div class="repeat">
-				<button class="repeat-button">Countdown with repeat</button>
-				<p> <small>
-				  Countdown with repeat, allows you to type the number of days you want to countdown. Once the counter reaches zero it will start over.
-				</small></p>
-			  </div>
-			</div>
-			<div class="form">
-			  <form>
-				<button class="begin" type="submit">Start Countdown</button>
-			  </form>
-			</div>
-			<div class="wrapper">
-			  <div class="item">
-				<div class="number">
-				  <span id="days">
-					00
-				  </span>
-				</div>
-				<span>Days</span>
-			  </div>
-			  <div class="item">
-				<div class="number">
-				  <span id="hours">
-					00
-				  </span>
-				</div>
-				<span>Hours</span>
-			  </div>
-			  <div class="item">
-				<div class="number">
-				  <span id="minutes">
-					00
-				  </span>
-				</div>
-				<span>Minutes</span>
-			  </div>
-			  <div class="item">
-				<div class="number">
-				  <span id="seconds">
-					00
-				  </span>
-				</div>
-				<span>Seconds</span>
-			  </div>
-			</div>
-		  </div>
-		<ul>
-			<li><p class = "bigtext1"> Commission Status  </p></li>
-			<li><img class = "down" src = "images/redbox.png" width =  "130" height = "130"> </img></li>
-		</ul>
-	<ul>
-		<li><p class = "bigtext1"> Prices! </p></li>
-		<li><img class = "down2" src = "images/commission2.png" width =  "500" height = "500"> </img>
-		</img></li>
-	</ul>
-	</main>
-	
-	<footer>
-		<br/>
-		<br />
-	
-	</footer>
 
+
+	<main>
+		<br />
+		<br />
+		<br />
+		<span class="num">0</span>
+		<p class = "bigtext1"> Total Commissions</p>
+		<ul>
+			<li><p class="bigtext1"> Commission Status  </p></li>
+			<li><img class="down" src="images/redbox.png" width="130" height="130"> </img></li>
+		</ul>
+		<ul>
+			<li><p class="bigtext1"> Prices! </p></li>
+			<li><img class="down2" src="images/commission2.png" width="500" height="500"> </img></li>
+		</ul>
+
+	</main>
+
+	<footer>
+
+
+	</footer>
 </body>
 
 </html>
