@@ -195,6 +195,14 @@ img{
 	background-color: pink;
 }
 
+.buttonabout{
+	background-color: pink;
+	padding: 15px 32px;
+	position: absolute;
+	right: 450px;
+	bottom: 280px;
+}
+
 .bigtext1{
 	font-size: 300%;
 	text-align: center;

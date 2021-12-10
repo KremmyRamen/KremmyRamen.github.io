@@ -12,6 +12,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+	
 </head>
 <body class="background">
 	<div class = "banner2"> 
@@ -41,8 +42,8 @@
 			<tbody>
 				<tr class="thirds"> misc. digital </tr>
 				<tr>
-					<td style="margin-left: auto; margin-right: auto;" >
-						<div ID ="misc. digital" data-nanogallery2='{
+					<td style="margin-left: auto; margin-right: auto;">
+						<div ID="misc. digital" data-nanogallery2='{
 
 							"thumbnailWidth": "200",
 							"thumbnailLabel": {
@@ -61,9 +62,9 @@
 					</td>
 				</tr>
 
-			<tr class = "thirds"><td>these artworks are primarily from spontaneous ideas and inspirations. i experiment with many styles, but i mainly focus on character design and appealing color schemes for each.</td></tr>
-			<tr class = "thirds"><td><button class = "buttoncolor" type="button" onclick = "window.location.href='about_me.html';">Learn more about me!</button></td></tr>
-		</tbody>
+				<tr class="thirds"><td>these artworks are primarily from spontaneous ideas and inspirations. i experiment with many styles, but i mainly focus on character design and appealing color schemes for each.</td></tr>
+				<tr class="thirds"><td><button class="buttoncolor" type="button" onclick="window.location.href='about_me.html';">Learn more about me!</button></td></tr>
+			</tbody>
 		</table>
 		<br>
 		<br>
@@ -73,7 +74,7 @@
 		<br>
 		<br>
 		<br>
-		
+
 		<table>
 			<tbody>
 				<tr class="thirds"> misc. traditional </tr>
@@ -97,11 +98,29 @@
 							<a href="images/traditional_6.JPG" data-ngthumb="images/traditional_6.JPG" data-ngdesc=""></a>
 						</div>
 				</tr>
-			<tr class = "thirds"><td>these are my more stress-relieving works, as well as works for my art classes. i like to use various mediums, but my go to is pencil and paper.</td></tr>
-			<tr class = "thirds"><td><button class = "buttoncolor" type="button" onclick = "window.location.href='contact_me.html';">Like what you see? Contact me!</button></td></tr>
-		</tbody>
+				<tr class="thirds"><td>these are my more stress-relieving works, as well as works for my art classes. i like to use various mediums, but my go to is pencil and paper.</td></tr>
+				<tr class="thirds"><td><button class="buttoncolor" type="button" onclick="window.location.href='contact_me.html';">Like what you see? Contact me!</button></td></tr>
+			</tbody>
 		</table>
 
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<h1>Add a comment:</h1>
+		<h2>Name:</h2>
+		<input type="text" id="name" name="name" placeholder="Anonymous" required /><br />
+		<h2>Comment:</h2>
+		<textarea id="comment" name="comment" rows="5" cols="20" required></textarea><br />
+		<button id="submit-comment">Submit</button>
+
+		<h1>Comments:</h1>
+		<ul id="comments"></ul>
+
+
+
+		<script src="js/commentScript.js"></script>
 	</main>
 	
 	<footer>
