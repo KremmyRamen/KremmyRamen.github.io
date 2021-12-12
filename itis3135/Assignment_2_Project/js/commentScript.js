@@ -1,19 +1,13 @@
-$(document).ready(function(){
+$(function(){
 
     var $comments = $('#comments');
-    var $name = $('#name');
-    var $comment = $('#comment');
-
-    function addComment(comment) {
-        $comments.append('<li>' + comment.name + ': ' + comment.comment + '</li><br />');
-    }
 
     $.ajax({
         type:'GET',
         url: 'apis/comments.json',
         success: function (comments) {
             $.each(comments, function (i, comment) {
-                addComment(comment);
+                $comments.append('<li>' + comment.name + ': ' + comment.comment + '</li><br />');
             });
         },
         error: function () {
@@ -22,17 +16,21 @@ $(document).ready(function(){
     });
 
     $('#submit-comment').on('click', function () {
-        var newComment = {
-            name: $name.val(),
-            comment: $comment.val(),
+
+        var newCommentMade = {
+            name: $('#name').val(),
+            comment: $('#comment').val(),
         };
+
 
         $.ajax({
             type: 'POST',
             url: 'apis/comments.json',
-            data: newComment,
+            data: JSON.stringify(newCommentMade),
+            dataType: 'json',
+            processData: false,
             success: function (newComment) {
-                addComment(newComment);
+                $comments.append('<li>' + newCommentMade.name + ': ' + newCommentMade.comment + '</li><br />');
             },
             error: function () {
                 alert('error saving comment');
@@ -41,4 +39,3 @@ $(document).ready(function(){
     });
 
 });
-
