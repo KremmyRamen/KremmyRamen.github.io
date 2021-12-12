@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="Assignment_2.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+	<title>Raymond Nguyen-ITIS 3135 e-portfolio Page 11/7/21</title>
+</head>
+
+<body class="background">
+	<header>
+		<div class = "banner2"> 
+		<div class="banner">
+			<a href="index.html">
+				<img class = "icon_banner" src="images/logo2.png" alt="Logo" width="141" height="141">
+			</a>
+			<ul>
+				<li><a href="about_me.html"> <img class = "img_button2" src="images/about_me_icon.png" alt="about me icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="eportfolio.html"><img class = "img_button2" src="images/portfolio_icon.png" alt="portfolio icon" style="width:100px;height:100px;"></a></li>
+				<li><a href="commissions.html"><img class = "img_button2" src="images/shop_icon.png" alt="commissions icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="contact_me.html"> <img class = "img_button2" src="images/contact_me_icon.png" alt="contact me icon" style="width:50px;height:50px;"></a></li>
+				<li><a href="donations.html"> <img class = "img_button2" src="images/donation_icon.png" alt="donations icon" style="width:50px;height:50px;"></a></li>
+			</ul>
+		</div>
+		</div>
+	</header>
+
+	<main>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<h2>misc. digital</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td style="margin-left: auto; margin-right: auto;">
+						<div ID="misc.digital" data-nanogallery2='{
+
+							"thumbnailWidth": "200",
+							"thumbnailLabel": {
+									"position": "overImageOnBottom"
+							},
+						"thumbnailAlignment": "center",
+						"thumbnailOpenImage": true
+						}'>
+							<a href="images/digital_1.jpg" data-ngthumb="images/digital_1.jpg" data-ngdesc=""></a>
+							<a href="images/digital_2.jpg" data-ngthumb="images/digital_2.jpg" data-ngdesc=""></a>
+							<a href="images/digital_3.jpg" data-ngthumb="images/digital_3.jpg" data-ngdesc=""></a>
+							<a href="images/digital_4.JPG" data-ngthumb="images/digital_4.JPG" data-ngdesc=""></a>
+							<a href="images/digital_5.JPG" data-ngthumb="images/digital_5.JPG" data-ngdesc=""></a>
+							<a href="images/digital_6.JPG" data-ngthumb="images/digital_6.JPG" data-ngdesc=""></a>
+						</div>
+					</td>
+				</tr>
+
+				<tr class="thirds"><td>these artworks are primarily from spontaneous ideas and inspirations. i experiment with many styles, but i mainly focus on character design and appealing color schemes for each.</td></tr>
+				<tr class="thirds"><td><button class="buttoncolor" type="button" onclick="window.location.href='about_me.html';">Learn more about me!</button></td></tr>
+			</tbody>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+<h2>misc. traditional</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<br>
+						<div ID="misc.traditional" data-nanogallery2='{
+
+							"thumbnailWidth": "200",
+							"thumbnailLabel": {
+									"position": "overImageOnBottom"
+							},
+						"thumbnailAlignment": "center",
+						"thumbnailOpenImage": true
+						}'>
+							<a href="images/traditional_1.JPG" data-ngthumb="images/traditional_1.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_2.JPG" data-ngthumb="images/traditional_2.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_3.JPG" data-ngthumb="images/traditional_3.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_4.JPG" data-ngthumb="images/traditional_4.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_5.JPG" data-ngthumb="images/traditional_5.JPG" data-ngdesc=""></a>
+							<a href="images/traditional_6.JPG" data-ngthumb="images/traditional_6.JPG" data-ngdesc=""></a>
+						</div>
+				</tr>
+				<tr class="thirds"><td>these are my more stress-relieving works, as well as works for my art classes. i like to use various mediums, but my go to is pencil and paper.</td></tr>
+				<tr class="thirds"><td><button class="buttoncolor" type="button" onclick="window.location.href='contact_me.html';">Like what you see? Contact me!</button></td></tr>
+			</tbody>
+		</table>
+
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<h1>Add a comment:</h1>
+		<h2>Name:</h2>
+		<input type="text" id="name" name="name" placeholder="Anonymous" required /><br />
+		<h2>Comment:</h2>
+		<textarea id="comment" name="comment" rows="5" cols="20" required></textarea><br />
+		<button id="submit-comment">Submit</button>
+
+		<h1>Comments:</h1>
+		<ul id="comments"></ul>
+		<script src="js/commentScript.js"></script>
+	</main>
+</body>
+
+	<footer>
+		<br />
+		<br />
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Frnguye14%2Fitis3135%2FAssignment_2_Project%2Feportfolio.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+		</a>
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Frnguye14%2Fitis3135%2FAssignment_2_Project%2Feportfolio.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+		</a>
+		<p>Page built by RXN Enterprises&trade;</p>
+	</footer>
+
+
+</html>
